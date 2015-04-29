@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Component Library</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://camden.gov.uk/ccm-ldn-theme/__ccm__/themes-prod/fc-sw2/images/icons/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/override.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      a.arrow-top { float:right; margin-bottom:10px; background-color:#333; color:#fff; text-decoration:none; font-weight:bold; font-size:12px !important; padding:2px 3px 5px; border-radius:10px }
+      a.arrow-top:hover { color:#fff; }
+      h2 a, h2 a:hover { cursor:hairline; color:#000; text-decoration:none; font-size:1.2em; }
+      pre { padding:0 9.5px 9.5px 9.5px; }
+    </style>
+
+  </head>
+
+  <body>
+
+    <a name="top"></a>
+    <div class="container">  
+
+      <div class="library-container">
+
+
+        <div style="background-color:#fafafa; padding:0 20px; border:1px solid #ddd; border-radius:10px; margin-bottom:10px">
+
+        <header>
+            <img src="images/headerLogo.png" class="img-responsive" alt="Camden Council"> 
+            <h1 class="text-center">Component Library for the Residential Account</h1>
+        </header>
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <p>A library of all the components currently used for the residential accounts web pages.  <br><br>Responsive, mobile first approach, by default. <br><br>Components have been built to cater for large desktops ( greater than 1200px ), medium desktop ( greater than 992px ), tablets ( greater than 768px ) and mobile devices ( less than 768px ). <br><br>Components degrade gracefully to ie8.  Where elements are not responsive in ie8, this is duly noted.  The components are built using the bootstrap API ( current version 3.3.1 ). </p>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="row">
+
+              <div class="col-md-12">
+
+                <p>Click on the buttons below to select the type of elements you need: <br><br>- <strong>Core components</strong> i.e. for the header, footer and left nav; <br>- <strong>Content components</strong> for the content area.<br><br>Code can be copy and pasted from the code box associated with each component or set of components.</p>
+
+
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                      <a class="templateComp-link" style="color:#337ab7; font-weight:bold; cursor:pointer">
+                        Core components&nbsp;&nbsp;&gt;
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                      <a class="commonComp-link" style="color:#337ab7; font-weight:bold; cursor:pointer">
+                        Content components&nbsp;&nbsp;&gt;
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            </div>
+
+          </div>
+
+            <div class="row">
+
+              <div class="col-md-12">
+
+                <div class="templateLibrary-container">
+
+                <div class="panel-group" id="accordionTemplate" role="tablist" aria-multiselectable="true">
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingF">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionTemplate" href="#collapseF" aria-expanded="false" aria-controls="collapseF">
+                          Footer
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseF" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingF">
+                      <div class="panel-body">
+                        <a href="#globalfooter">Global Footer</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingH">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionTemplate" href="#collapseH" aria-expanded="false" aria-controls="collapseH">
+                          Header
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseH" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingH">
+                      <div class="panel-body">
+                        <a href="#globalheader">Global Header</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingL">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionTemplate" href="#collapseL" aria-expanded="false" aria-controls="collapseL">
+                          Left Navigation
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseL" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingL">
+                      <div class="panel-body">
+                        <a href="#leftnav">Left Navigation</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+                </div>
+
+
+                <div class="commonLibrary-container">
+
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Alert Boxes
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                         <a href="#alerts">Alert Success, Alert Danger, Alert Forms</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingApCal">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseApCal" aria-expanded="false" aria-controls="collapseApCal">
+                          Appointment Calendar
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseApCal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingApCal">
+                      <div class="panel-body">
+                         <a href="#appCal">Appointment Calendar container</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Box Panels
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                         <a href="#panels">Panels, with Captions and Buttons</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingA">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseA" aria-expanded="false" aria-controls="collapseA">
+                          Breadcrumb
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingA">
+                      <div class="panel-body">
+                        <a href="#breadcrumb">Breadcrumb navigation</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          Buttons
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                         <a href="#buttons">Input Buttons and hypelink Buttons (Large)</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSevenOne">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenOne" aria-expanded="false" aria-controls="collapseSevenOne">
+                          Form Fields
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSevenOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenOne">
+                      <div class="panel-body">
+                        <a href="#forms">Form Wrapper, Input, Select Menu, Select Menu Filter, Checkboxes, Radio Buttons, Submit/Reset Buttons</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Headers
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <a href="#headers">h1, h2, h3, h4, h5</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingAl">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseAl" aria-expanded="false" aria-controls="collapseAl">
+                          Image and Text Alignment
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseAl" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAl">
+                      <div class="panel-body">
+                        <a href="#contentAlignment">Aligning images and text as inline blocks</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingB">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseB" aria-expanded="false" aria-controls="collapseB">
+                          Logged In
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseB" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingB">
+                      <div class="panel-body">
+                        <a href="#loggedin">Logged in details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          Pagination
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                      <div class="panel-body">
+                         <a href="#paginate">Pagination</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Paragraphs
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                         <a href="#paras">Paragraph normal, Paragraph italicised, Paragraph bold</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Responsive Table
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                         <a href="#table">Responsive table ( does not work in ie8 ).  The table is also sortable and scrollable at a certain height</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+              </div>
+
+
+
+              </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+<div class="code-snippets">
+
+    <div class="row">
+
+     
+      <div class="col-md-12">
+
+       <h2><a name="globalheader">Global Header</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Main Header -->
+
+        <div class="row">
+         
+          <div class="col-md-12">
+
+            <header>
+
+              <img src="images/headerLogo.png" class="img-responsive" alt="Camden Council">
+              
+              <div class="text-right">
+                <ul class="login-list">
+                  <li><a href="testpage.htm">My details</a></li>
+                  <li><a href="testpage.htm">Logout</a></li>    
+                </ul>
+              </div>
+
+            </header>
+
+          </div>
+        </div>
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+    &lt;header&gt;
+      &lt;img src="images/headerLogo.png" class="img-responsive" alt="Camden Council"&gt;
+      &lt;div class="text-right"&gt;
+        &lt;ul class="login-list"&gt;
+          &lt;li&gt;&lt;a href="testpage.htm"&gt;My details&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="testpage.htm"&gt;Logout&lt;/a&gt;&lt;/li&gt;    
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Main Header -->
+
+
+    </div></div>
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+            <h2><a name="globalfooter">Global Footer</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+  <!-- Start Footer -->
+               
+            <div class="row">
+              <div class="col-md-12">
+
+                 <footer>
+
+                  <p class="pull-left"><img src="images/footerLogo.png" class="img-responsive" alt="Camden Council"></p>
+                  <p class="pull-left copyright">Copyright &copy; 2014 Disclaimer and privacy statement</p>
+
+                </footer>
+
+              </div>
+            </div>
+
+            <br>
+
+<pre><code>  
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-12"&gt;
+
+       &lt;footer&gt;
+        &lt;p class="pull-left"&gt;&lt;img src="images/footerLogo.png" class="img-responsive" alt="Camden Council"&gt;&lt;/p&gt;
+        &lt;p class="pull-left copyright"&gt;Copyright &amp;copy; 2014 Disclaimer and privacy statement&lt;/p&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+  <!-- End Footer -->
+
+        </div>
+    </div>
+
+
+
+        <div class="row">
+
+         
+          <div class="col-md-12">
+
+          <h2><a name="leftnav">Left Navigation</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Left Nav -->
+
+          <div class="col-md-3">
+
+            <!-- Start Static navbar -->
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon arrow-down" aria-hidden="true"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">My resident account</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Account Overview</a></li>
+                    <li><a href="#">Housing</a></li>
+                    <li><a href="#">Parking</a></li>
+                    <li><a href="#">Environmental services</a></li>
+                    <li style="height:3px; background-color:#ccc"></li>
+                    <li><a href="#">My messages</a></li>
+                    <li><a href="#">My transactions</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div><!--/.container-fluid -->
+            </nav>
+            <!-- End Static navbar -->
+
+          </div>
+
+
+
+<!-- End Left Nav -->
+
+
+          <div class="col-md-9">
+
+
+<pre><code> 
+&lt;nav class="navbar navbar-default" role="navigation"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"&gt;
+        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class="glyphicon arrow-down" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class="navbar-brand" href="#"&gt;My resident account&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="navbar" class="navbar-collapse collapse"&gt;
+      &lt;ul class="nav navbar-nav"&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Account Overview&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Housing&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Parking&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Environmental services&lt;/a&gt;&lt;/li&gt;
+        &lt;li style="height:3px; background-color:#ccc"&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;My messages&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;My transactions&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+
+
+          </div>
+
+
+        </div></div>
+
+
+
+        <br>
+
+
+
+
+      <div id="wrapper">
+
+        <h2><a name="loggedin">Logged in</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Logged In -->
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="text-right">
+              <p>My Name is Nadeem and i am happy to do this, i think</p>
+            </div>
+
+          </div>
+        </div>
+
+
+<pre><code>        
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+    &lt;div class="text-right"&gt;
+      &lt;p&gt;My Name is Nadeem and i am happy to do this, i think&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Logged In -->
+
+
+        <h2><a name="breadcrumb">Breadcrumb</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Breadcrumbs -->
+
+        <div class="row">
+           <div class="col-md-12"> 
+
+            <ol class="breadcrumb">
+              <li class="homeIcon"><a href="#"><img src="images/HomeIcon.png" class="img-responsive" alt="Home"></a></li>
+              <li><a href="#">link1</a></li>
+              <li><a href="#">link2</a></li>
+              <li><a href="#">link3</a></li>
+              <li><a href="#">link4</a></li>
+              <li><a href="#">link5</a></li>
+            </ol>
+
+          </div>
+        </div>
+
+
+<pre><code>        
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt; 
+
+    &lt;ol class="breadcrumb"&gt;
+      &lt;li class="homeIcon"&gt;&lt;a href="#"&gt;&lt;img src="images/HomeIcon.png" class="img-responsive" alt="Home"&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;link1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;link2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;link3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;link4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;link5&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Breadcrumbs -->
+
+<!-- Start Left Nav and Content Area -->
+
+        <div class="row">
+
+<!-- Start Left Nav -->
+
+          <div class="col-md-3">
+
+          </div>
+
+<!-- End Left Nav -->
+
+<!-- Start Content Area -->
+
+            <div class="col-md-9 noleftpadding">
+
+              <h2><a name="headers">Headers</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Heading -->
+
+              <div class="row">
+                <div class="col-md-12">
+
+                 <div class="page-header">
+                    <header>
+                      <h1>h1 - I need a holiday in the sun because I am grumpy by nature</h1>
+                    </header>
+                  </div>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+   &lt;div class="page-header"&gt;
+      &lt;header&gt;
+       &lt;h1&gt;h1 - I need a holiday in the sun because I am grumpy by nature&lt;/h1&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+              <div class="row">
+                <div class="col-md-12">
+
+                 <div class="page-header">
+                    <header>
+                      <h2>h2 - I need a holiday in the sun because I am grumpy by nature</h2>
+                    </header>
+                  </div>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+   &lt;div class="page-header"&gt;
+      &lt;header&gt;
+        &lt;h2&gt;h2 - I need a holiday in the sun because I am grumpy by nature&lt;/h2&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+              <div class="row">
+                <div class="col-md-12">
+
+                 <div class="page-header">
+                    <header>
+                      <h3>h3 - I need a holiday in the sun because I am grumpy by nature</h3>
+                    </header>
+                  </div>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+   &lt;div class="page-header"&gt;
+      &lt;header&gt;
+        &lt;h3&gt;h3 - I need a holiday in the sun because I am grumpy by nature&lt;/h3&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <h5>h5 - I need a holiday in the sun because I am grumpy by nature</h5>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+    &lt;h5&gt;h5 - I need a holiday in the sun because I am grumpy by nature&lt;/h5&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Heading -->
+
+
+
+
+              <h2><a name="appCal">Appointment Calendar</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Appointment Calendar -->
+
+
+              <div class="row">
+                <div class="col-md-12">
+
+                <form>
+
+                  <fieldset>
+
+                  <legend></legend>
+
+                  <div class="appointments-container">
+
+                    <div class="day-column">
+                      <ul>
+                        <li class="date-heading"><p>Mon, 15 Dec</p></li>
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                      </ul>
+                    </div>
+
+                    <div class="day-column">
+                      <ul>
+                        <li class="date-heading"><p>Tue, 16 Dec</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="1" id="r1" />
+                            <label class="radio-label" for="r1">12am - 12pm </label>
+                        </li> 
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="2" id="r2" />
+                            <label class="radio-label" for="r2">12am - 12pm&nbsp;<img src="images/eco.png" width="20px" alt="eco" height="13px" /></label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="3" id="r3" />
+                            <label class="radio-label" for="r3">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="4" id="r4" />
+                            <label class="radio-label" for="r4">12am - 12pm </label>
+                        </li> 
+                      </ul>
+                    </div>
+
+                    <div class="day-column">
+                      <ul>
+                        <li class="date-heading"><p>Wed, 17 Dec</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="5" id="r5" />
+                            <label class="radio-label" for="r5">12am - 12pm </label>
+                        </li> 
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="6" id="r6" />
+                            <label class="radio-label" for="r6">12am - 12pm </label>
+                        </li> 
+                        <li>
+                            <input type="radio" name="rGroup" value="7" id="r7" />
+                             <label class="radio-label" for="r7">12am - 12pm </label>
+                        </li>
+                        <li>
+                          <input type="radio" name="rGroup" value="8" id="r8" />
+                           <label class="radio-label" for="r8">12am - 12pm </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="day-column">
+                      <ul>
+                        <li class="date-heading"><p>Thur, 18 Dec</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="9" id="r9" />
+                            <label class="radio-label" for="r9">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="10" id="r10" />
+                            <label class="radio-label" for="r10">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="11" id="r11" />
+                            <label class="radio-label" for="r11">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="12" id="r12" />
+                            <label class="radio-label" for="r12">12am - 12pm </label>
+                        </li> 
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                      </ul>
+                    </div>
+
+
+                    <div class="day-column">
+                      <ul>
+                        <li class="date-heading"><p>Fri, 19 Dec</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="13" id="r13" />
+                            <label class="radio-label" for="r13">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="14" id="r14" />
+                            <label class="radio-label" for="r14">12am - 12pm </label>
+                        </li> 
+                        <li>    
+                            <input type="radio" name="rGroup" value="15" id="r15" />
+                            <label class="radio-label" for="r15">12am - 12pm </label>
+                        </li> 
+                        <li class="date-unavailable"><p>Unavailable</p></li>
+                        <li>    
+                            <input type="radio" name="rGroup" value="16" id="r16" />
+                            <label class="radio-label" for="r16">12am - 12pm </label>
+                        </li> 
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  </fieldset>
+
+                </form>
+
+                </div>
+              </div>
+
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+  &lt;form&gt;
+
+    &lt;fieldset&gt;
+
+    &lt;legend&gt;&lt;/legend&gt;
+
+    &lt;div class="appointments-container"&gt;
+
+      &lt;div class="day-column"&gt;
+        &lt;ul&gt;
+          &lt;li class="date-heading"&gt;&lt;p&gt;Mon, 15 Dec&lt;/p&gt;&lt;/li&gt;
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="day-column"&gt;
+        &lt;ul&gt;
+          &lt;li class="date-heading"&gt;&lt;p&gt;Tue, 16 Dec&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="1" id="r1" /&gt;
+              &lt;label class="radio-label" for="r1"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="2" id="r2" /&gt;
+              &lt;label class="radio-label" for="r2"&gt;12am - 12pm&amp;nbsp;&lt;img src="images/eco.png" width="20px" alt="eco" height="13px" /&gt;&lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="3" id="r3" /&gt;
+              &lt;label class="radio-label" for="r3"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="4" id="r4" /&gt;
+              &lt;label class="radio-label" for="r4"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="day-column"&gt;
+        &lt;ul&gt;
+          &lt;li class="date-heading"&gt;&lt;p&gt;Wed, 17 Dec&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="5" id="r5" /&gt;
+              &lt;label class="radio-label" for="r5"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="6" id="r6" /&gt;
+              &lt;label class="radio-label" for="r6"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;
+              &lt;input type="radio" name="rGroup" value="7" id="r7" /&gt;
+               &lt;label class="radio-label" for="r7"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;input type="radio" name="rGroup" value="8" id="r8" /&gt;
+             &lt;label class="radio-label" for="r8"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="day-column"&gt;
+        &lt;ul&gt;
+          &lt;li class="date-heading"&gt;&lt;p&gt;Thur, 18 Dec&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="9" id="r9" /&gt;
+              &lt;label class="radio-label" for="r9"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="10" id="r10" /&gt;
+              &lt;label class="radio-label" for="r10"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="11" id="r11" /&gt;
+              &lt;label class="radio-label" for="r11"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="12" id="r12" /&gt;
+              &lt;label class="radio-label" for="r12"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class="day-column"&gt;
+        &lt;ul&gt;
+          &lt;li class="date-heading"&gt;&lt;p&gt;Fri, 19 Dec&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="13" id="r13" /&gt;
+              &lt;label class="radio-label" for="r13"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="14" id="r14" /&gt;
+              &lt;label class="radio-label" for="r14"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="15" id="r15" /&gt;
+              &lt;label class="radio-label" for="r15"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+          &lt;li class="date-unavailable"&gt;&lt;p&gt;Unavailable&lt;/p&gt;&lt;/li&gt;
+          &lt;li&gt;    
+              &lt;input type="radio" name="rGroup" value="16" id="r16" /&gt;
+              &lt;label class="radio-label" for="r16"&gt;12am - 12pm &lt;/label&gt;
+          &lt;/li&gt; 
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+
+  &lt;/form&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+
+
+<!-- End Appointment Calendar -->
+
+
+              <h2><a name="paras">Paragraphs</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+
+<!-- Start Paragraphs -->
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <h3>Paragraph normal</h3>
+                  <p>This is paragraph text thatThis is paragraph textThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph 
+                    <a href="testpage.htm">text that</a> This is paragraph text </p>
+
+                  <h3>Paragraph italicised</h3>
+                  <p class="font-italic">This is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph <a href="#">text that is italicised</a> This is</p>
+
+                    <h3>Paragraph bold</h3>
+                   <p class="font-bold">that is boldThis is text that is boldThis is text that is boldThis is text that is boldThis is text that is boldThis is <a href="#">text that is boldThis</a> is text that</p>
+
+                </div>
+              </div>
+
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+
+    &lt;p&gt;This is paragraph text thatThis is paragraph textThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph 
+      &lt;a href="testpage.htm"&gt;text that&lt;/a&gt; This is paragraph text &lt;/p&gt;
+
+    &lt;p class="font-italic"&gt;This is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph text that is italicisedThis is paragraph &lt;a href="#"&gt;text that is italicised&lt;/a&gt; This is&lt;/p&gt;
+
+     &lt;p class="font-bold"&gt;that is boldThis is text that is boldThis is text that is boldThis is text that is boldThis is text that is boldThis is &lt;a href="#"&gt;text that is boldThis&lt;/a&gt; is text that&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Paragraphs -->
+
+<h2><a name="forms">Form Fields</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+<h3>Form Wrapper</h3>
+<p>Outer row that creates a wrapper for the form fields</p>
+
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+    &lt;div class="form-fields"&gt;
+      &lt;form role="form"&gt;
+
+        ....... input, select menu, checkboxes, radio buttons, submit/reset buttons  ......
+
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- Start Forms -->
+
+<div class="row">
+   <div class="col-sm-12 col-md-12">
+    <div class="form-fields">
+      <form role="form">
+
+<!-- Start Form Input -->
+
+        <h3>Form Input</h3>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label for="exampleInputEmail2">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            </div>
+          </div> 
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label for="exampleInputPassword2">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+            </div>
+          </div>
+
+        </div>
+
+<pre><code>        
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-6 col-md-6"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail2"&gt;Email address&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-6 col-md-6"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputPassword2"&gt;Password&lt;/label&gt;
+        &lt;input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+<!-- End Form Input -->
+
+<!-- Start Form Select Menu -->
+
+        <h3>Form Select Menu</h3>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-6">
+
+            <div class="form-group">
+              <label for="selectmenu">Payment Method</label>
+              <select id="selectmenu" class="form-control">
+                <option>Default select1</option>
+                <option>Default select2</option>
+                <option>Default select3</option>
+                <option>Default select4</option>
+                <option>Default select5</option>
+                <option>Default select6</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+
+<pre><code>        
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-6 col-md-6"&gt;
+
+    &lt;div class="form-group"&gt;
+      &lt;label for="selectmenu"&gt;Payment Method&lt;/label&gt;
+      &lt;select id="selectmenu" class="form-control"&gt;
+        &lt;option&gt;Default select1&lt;/option&gt;
+        &lt;option&gt;Default select2&lt;/option&gt;
+        &lt;option&gt;Default select3&lt;/option&gt;
+        &lt;option&gt;Default select4&lt;/option&gt;
+        &lt;option&gt;Default select5&lt;/option&gt;
+        &lt;option&gt;Default select6&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Form Select Menu -->
+
+
+<!-- Start Form Select Menu Filter -->
+
+ <h3>Form Select Menu Filter</h3>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-6">
+
+      <div class="form-group">
+        <label for="selectmenu2">Show transactions for</label>
+        <select id="selectmenu2" class="form-control">
+          <option value="all">All</option>
+          <option value="housing">Housing</option>
+          <option value="parking">Parking</option>
+          <option vlaue="residential">Residential</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="col-sm-6 col-md-6">
+
+      <div id="filter1">
+        <div class="form-group">
+          <label for="selectmenu3">Filter transactions by</label>
+          <select id="selectmenu3" class="form-control">
+            <option>All</option>
+            <option>Management</option>
+            <option>Leaseholder</option>
+            <option>Repairs</option>
+            <option>Rent</option>
+            <option>Pest Control</option>
+            <option>Benefits</option>
+          </select>
+        </div>
+    </div>
+
+    </div>
+
+  </div>
+
+
+<pre><code>  
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-6 col-md-6"&gt;
+
+    &lt;div class="form-group"&gt;
+      &lt;label for="selectmenu1"&gt;Show transactions for&lt;/label&gt;
+      &lt;select id="selectmenu1" class="form-control"&gt;
+        &lt;option value="all"&gt;All&lt;/option&gt;
+        &lt;option value="housing"&gt;Housing&lt;/option&gt;
+        &lt;option value="parking"&gt;Parking&lt;/option&gt;
+        &lt;option vlaue="residential"&gt;Residential&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6 col-md-6"&gt;
+
+    &lt;div id="filter1"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="selectmenu2"&gt;Filter transactions by&lt;/label&gt;
+        &lt;select id="selectmenu2" class="form-control"&gt;
+          &lt;option&gt;All&lt;/option&gt;
+          &lt;option&gt;Management&lt;/option&gt;
+          &lt;option&gt;Leaseholder&lt;/option&gt;
+          &lt;option&gt;Repairs&lt;/option&gt;
+          &lt;option&gt;Rent&lt;/option&gt;
+          &lt;option&gt;Pest Control&lt;/option&gt;
+          &lt;option&gt;Benefits&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+<!-- End Form Select Menu Filter -->
+
+
+
+<!-- Start Checkbox -->
+
+        <h3>Form CheckBoxes</h3>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+
+            <div class="form-group">
+              <div class="check-input">
+                <label for="groupid1"> 
+                    <input type='checkbox' id='groupid1'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a> This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <div class="check-input">
+                <label for="groupid2"> 
+                    <input type='checkbox' id='groupid2'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <div class="check-input">
+                <label for="groupid3"> 
+                    <input type='checkbox' id='groupid3'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+<pre><code>        
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;div class="form-group"&gt;
+      &lt;div class="check-input"&gt;
+        &lt;label for="groupid1"&gt; 
+            &lt;input type='checkbox' id='groupid1'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt; This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="row"&gt;
+
+  &lt;div class="col-sm-6 col-md-6"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;div class="check-input"&gt;
+        &lt;label for="groupid2"&gt; 
+            &lt;input type='checkbox' id='groupid2'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6 col-md-6"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;div class="check-input"&gt;
+        &lt;label for="groupid3"&gt; 
+            &lt;input type='checkbox' id='groupid3'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Checkbox -->
+
+<!-- Start Radio Buttons -->
+
+        <h3>Form Radio Buttons</h3>
+
+        <div class="row">
+
+          <div class="col-sm-12 col-md-12">
+
+            <fieldset>
+
+              <legend>My favourite Doughnuts</legend>
+
+              <div class="form-group">
+                <div class="check-radio">
+                  <label for="groupidrad1"> 
+                      <input type='radio' name="radio" id='groupidrad1'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a> This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+                  </label>
+                </div>  
+              </div>
+
+          </fieldset> 
+
+          </div>
+
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-6">
+
+            <fieldset>
+
+              <legend>My favourite Cakes</legend>
+
+              <div class="form-group">
+                <div class="check-radio">
+                  <label for="groupidrad34"> 
+                      <input type='radio' name="radio" id='groupidrad34'>This is some text to show a text box This is some text to show a text box 
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="check-radio">
+                  <label for="groupidrad11"> 
+                      <input type='radio' name="radio" id='groupidrad11'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a> This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+                  </label>
+                </div>  
+              </div>
+
+          </fieldset> 
+
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+
+            <fieldset>
+
+              <legend>My favourite Ice Cream</legend>
+
+              <div class="form-group">
+                <div class="check-radio">
+                  <label for="groupidrad12"> 
+                      <input type='radio' name="radio" id='groupidrad12'>This is some text to show a text box This is some text to show a text box 
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="check-radio">
+                  <label for="groupidrad21"> 
+                      <input type='radio' name="radio" id='groupidrad21'>This is some text to show a text box <a href="#">Terms and Conditions Terms and Conditions</a> This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+                  </label>
+                </div>  
+              </div>
+
+          </fieldset> 
+
+          </div>
+
+        </div>
+
+
+<pre><code>        
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+    &lt;fieldset&gt;
+
+      &lt;legend&gt;My favourite Doughnuts&lt;/legend&gt;
+
+      &lt;div class="form-group"&gt;
+        &lt;div class="check-radio"&gt;
+          &lt;label for="groupidrad1"&gt; 
+              &lt;input type='radio' name="radio" id='groupidrad1'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt; This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+          &lt;/label&gt;
+        &lt;/div&gt;  
+      &lt;/div&gt;
+
+    &lt;/fieldset&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="row"&gt;
+
+  &lt;div class="col-sm-6 col-md-6"&gt;
+    &lt;fieldset&gt;
+
+      &lt;legend&gt;My favourite Cakes&lt;/legend&gt;
+
+      &lt;div class="form-group"&gt;
+        &lt;div class="check-radio"&gt;
+          &lt;label for="groupidrad34"&gt; 
+              &lt;input type='radio' name="radio" id='groupidrad34'&gt;This is some text to show a text box This is some text to show a text box 
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="form-group"&gt;
+        &lt;div class="check-radio"&gt;
+          &lt;label for="groupidrad11"&gt; 
+              &lt;input type='radio' name="radio" id='groupidrad11'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt; This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+          &lt;/label&gt;
+        &lt;/div&gt;  
+      &lt;/div&gt;
+
+    &lt;/fieldset&gt; 
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6 col-md-6"&gt;
+    &lt;fieldset&gt;
+
+      &lt;legend&gt;My favourite Ice Cream&lt;/legend&gt;
+
+      &lt;div class="form-group"&gt;
+        &lt;div class="check-radio"&gt;
+          &lt;label for="groupidrad12"&gt; 
+              &lt;input type='radio' name="radio" id='groupidrad12'&gt;This is some text to show a text box This is some text to show a text box 
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="form-group"&gt;
+        &lt;div class="check-radio"&gt;
+          &lt;label for="groupidrad21"&gt; 
+              &lt;input type='radio' name="radio" id='groupidrad21'&gt;This is some text to show a text box &lt;a href="#"&gt;Terms and Conditions Terms and Conditions&lt;/a&gt; This is some text to show a text box  This is some text to show a text box This is some text to show a text box 
+          &lt;/label&gt;
+        &lt;/div&gt;  
+      &lt;/div&gt;
+
+    &lt;/fieldset&gt; 
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+
+<!-- End Radio Buttons -->
+
+<!-- Start Form Submit/Radio Buttons-->
+
+        <h3>Form Submit / Reset Buttons</h3>
+
+        <div class="row">
+           <div class="col-sm-12 col-md-12">
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary reset-clear">Clear</button>
+
+          </div>
+        </div>
+
+<pre><code>        
+&lt;div class="row"&gt;
+   &lt;div class="col-sm-12 col-md-12"&gt;
+
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+      &lt;button type="submit" class="btn btn-primary reset-clear"&gt;Clear&lt;/button&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Form Submit/Radio Buttons-->
+
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- End Forms -->
+
+
+<h2><a name="contentAlignment">Image and Text Alignment</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Image and Text Alignment-->
+
+  <div class="row">
+      <div class="col-sm-12 col-md-12">
+
+        <div class="imgtextContainer">
+            <div class="imgtextContent">
+              <div class="imgtextImage"><img alt="eco" src="images/eco.png"></div>
+              <div class="imgtextPara">
+                <p>this is the appointment content this is the appointment Contentthis is the appointment Content this is the appointment Content this is the appointment content<br>
+                this is the appointment content this is the appointment contentthis is the appointment Contentthis this is the appointment content this is the appointment content this is the appointment content<br>
+                this is the appointment content this is the appointment content this is the appointment content this is the appointment contentthis is the appointment Contentthis this is the appointment content<br></p>
+              </div>
+            </div>
+        </div>    
+
+
+      </div>
+    </div>
+
+
+<pre><code>  
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-12 col-md-12"&gt;
+
+      &lt;div class="imgtextContainer"&gt;
+          &lt;div class="imgtextContent"&gt;
+            &lt;div class="imgtextImage"&gt;&lt;img alt="eco" src="images/eco.png"&gt;&lt;/div&gt;
+            &lt;div class="imgtextPara"&gt;
+              &lt;p&gt;this is the appointment content this is the appointment Contentthis is the appointment Content this is the appointment Content this is the appointment content&lt;br&gt;
+              this is the appointment content this is the appointment contentthis is the appointment Contentthis this is the appointment content this is the appointment content this is the appointment content&lt;br&gt;
+              this is the appointment content this is the appointment content this is the appointment content this is the appointment contentthis is the appointment Contentthis this is the appointment content&lt;br&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;    
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+
+
+<!-- End Image and Text Alignment-->
+
+
+<h2><a name="alerts">Alert Boxes</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Success Alert -->
+
+              <h3>Alert Success</h3>           
+
+              <div class="row">
+                 <div class="col-sm-12 col-md-12">
+
+                  <div class="alert alert-success" role="alert">
+                    <p>This is a success alert box This is a success alert box This is a success alert box<a href="#">This is a success alert box</a> This is a success alert box</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+   &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;div class="alert alert-success" role="alert"&gt;
+      &lt;p&gt;This is a success alert box This is a success alert box This is a success alert box&lt;a href="#"&gt;This is a success alert box&lt;/a&gt; This is a success alert box&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Success Alert -->
+
+<!-- Start Danger Alert -->
+
+              <h3>Alert Danger</h3> 
+
+              <div class="row">
+                 <div class="col-sm-12 col-md-12">
+
+                  <div class="alert alert-danger" role="alert">
+                    <p>This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box
+                    This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box
+                    This is a danger alert box This is a danger alert box <a href="#">This is a danger alert box</a> This is a danger alert box</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+   &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;div class="alert alert-danger" role="alert"&gt;
+      &lt;p&gt;This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box This is a danger alert box &lt;a href="#"&gt;This is a danger alert box&lt;/a&gt; This is a danger alert box&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Danger Alert -->
+
+<!-- Start Alert with Inputs -->
+
+              <h3>Alert Form</h3> 
+
+              <div class="row">
+                 <div class="col-sm-12 col-md-12">
+
+                  <div class="alert alert-danger" role="alert">
+
+                    <form role="form">
+                      <p class="help-block">The password must contain eight characters including atleast one number</p>
+                      <p>Please enter something thats more appropriate.</p>
+
+                       <div class="row">
+
+                          <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <label for="exampleInputEmail3">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                          </div> 
+
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <label for="exampleInputPassword23">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword23" placeholder="Password">
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                          <div class="col-sm-6 col-md-6">
+
+                            <div class="form-group">
+                              <label for="selectmenu1">Payment Method</label>
+                              <select id="selectmenu1" class="form-control">
+                                <option>Default select1</option>
+                                <option>Default select2</option>
+                                <option>Default select3</option>
+                                <option>Default select4</option>
+                                <option>Default select5</option>
+                                <option>Default select6</option>
+                              </select>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-12 col-md-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary reset-clear">Clear</button>
+
+                          </div>
+                        </div>
+
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+    &lt;div class="alert alert-danger" role="alert"&gt;
+      &lt;form role="form"&gt;
+
+        &lt;p class="help-block"&gt;The password must contain eight characters including atleast one number&lt;/p&gt;
+        &lt;p&gt;Please enter something thats more appropriate.&lt;/p&gt;
+
+         &lt;div class="row"&gt;
+            &lt;div class="col-sm-6 col-md-6"&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email"&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt; 
+          &lt;/div&gt;
+
+          &lt;div class="row"&gt;
+            &lt;div class="col-sm-6 col-md-6"&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label for="exampleInputPassword23"&gt;Password&lt;/label&gt;
+                &lt;input type="password" class="form-control" id="exampleInputPassword23" placeholder="Password"&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+
+          &lt;div class="row"&gt;
+            &lt;div class="col-sm-6 col-md-6"&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label for="selectmenu1"&gt;Payment Method&lt;/label&gt;
+                &lt;select id="selectmenu1" class="form-control"&gt;
+                  &lt;option&gt;Default select1&lt;/option&gt;
+                  &lt;option&gt;Default select2&lt;/option&gt;
+                  &lt;option&gt;Default select3&lt;/option&gt;
+                  &lt;option&gt;Default select4&lt;/option&gt;
+                  &lt;option&gt;Default select5&lt;/option&gt;
+                  &lt;option&gt;Default select6&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="row"&gt;
+            &lt;div class="col-sm-12 col-md-12"&gt;
+
+              &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+              &lt;button type="submit" class="btn btn-primary reset-clear"&gt;Clear&lt;/button&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Alert with Inputs -->
+
+<h2><a name="table">Responsive Table</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Responsive Table -->
+
+              <div class="row">
+                 <div class="col-sm-12 col-md-12">
+
+
+                    <div id="no-more-tables">
+
+                      <table id="myTable" cellspacing="0" cellpadding="0" class="tablesorter">
+
+                        <thead>
+                          <tr>
+                            <th class="header">Status</th>
+                            <th class="header">Date</th>
+                            <th class="header">Service</th>
+                            <th class="header">Description</th>
+                            <th class="header">Reference</th>
+                          </tr>
+                        </thead>       
+
+                        <tbody>                       
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED this is a text leegth test</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr>  
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderC</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr>  
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">OPEN</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">15/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225678</a></td>
+                          </tr>   
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                          </tr> 
+
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderC</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr>  
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">OPEN</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">15/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225678</a></td>
+                          </tr>   
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                          </tr> 
+
+                          <tr>
+                            <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                            <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                            <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                            <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                            <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                          </tr> 
+
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+
+                </div>
+              </div>
+
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;div id="no-more-tables"&gt;
+
+      &lt;table id="myTable" cellspacing="0" cellpadding="0" class="tablesorter"&gt;
+
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th class="header"&gt;Status&lt;/th&gt;
+            &lt;th class="header"&gt;Date&lt;/th&gt;
+            &lt;th class="header"&gt;Service&lt;/th&gt;
+            &lt;th class="header"&gt;Description&lt;/th&gt;
+            &lt;th class="header"&gt;Reference&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;       
+
+        &lt;tbody&gt;                       
+
+          &lt;tr&gt;
+            &lt;td class="table-data" data-title="Status"&gt;&lt;a href="#"&gt;CLOSED&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Date"&gt;&lt;a href="#"&gt;14/01/2013&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Service"&gt;&lt;a href="#"&gt;Repairs&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Description"&gt;&lt;a href="#"&gt;Leaseholder&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Reference"&gt;&lt;a href="#"&gt;1232225&lt;/a&gt;&lt;/td&gt;
+          &lt;/tr&gt;  
+
+          &lt;tr&gt;
+            &lt;td class="table-data" data-title="Status"&gt;&lt;a href="#"&gt;CLOSED&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Date"&gt;&lt;a href="#"&gt;14/01/2013&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Service"&gt;&lt;a href="#"&gt;Repairs&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Description"&gt;&lt;a href="#"&gt;Leaseholder&lt;/a&gt;&lt;/td&gt;
+            &lt;td class="table-data" data-title="Reference"&gt;&lt;a href="#"&gt;1232225&lt;/a&gt;&lt;/td&gt;
+          &lt;/tr&gt;  
+
+          ...........
+
+        &lt;/tbody&gt;
+
+      &lt;/table&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Responsive Table -->
+
+              <h2><a name="panels">Box Panels</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Panels -->
+
+              <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">
+                      <div class="thumb-content">
+                        <h2>I need a holiday, really i do, really i do, really i do</h2>
+                        <p class="thumb-text">fdgndglk nkl n kn k n kn kj n kjn kj njk n klk nkl n kn k n kn kj n kjn kj njk jn kj</p>
+                      </div>
+                      <div class="text-center"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Go on Housing</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">
+                      <div class="thumb-content">
+                        <h2>I need a holiday, really i do</h2>
+                        <p class="thumb-text">fdgndglk nkl nn kj</p>
+                      </div>
+                      <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Go to Parking</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">
+                      <div class="thumb-content">
+                        <h2>I need a holiday</h2>
+                        <p class="thumb-text">fdgndglk nkl n kn k n kn kj n  sdfjsdi kj i niun iu n iun in iunvwdiun ciuniuniu n iun iu niu n iukjn kj njk n kjn kj</p>
+                      </div>
+                      <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Go to Council Tax</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+
+  &lt;div class="col-sm-6 col-md-4"&gt;
+    &lt;div class="thumbnail"&gt;
+      &lt;div class="caption"&gt;
+        &lt;div class="thumb-content"&gt;
+          &lt;h2&gt;I need a holiday, really i do, really i do, really i do&lt;/h2&gt;
+          &lt;p class="thumb-text"&gt;fdgndglk nkl n kn k n kn kj n kjn kj njk n klk nkl n kn k n kn kj n kjn kj njk jn kj&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="text-center"&gt;&lt;a href="#" class="btn btn-primary btn-lg btn-block" role="button"&gt;Go on Housing&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6 col-md-4"&gt;
+    &lt;div class="thumbnail"&gt;
+      &lt;div class="caption"&gt;
+        &lt;div class="thumb-content"&gt;
+          &lt;h2&gt;I need a holiday, really i do&lt;/h2&gt;
+          &lt;p class="thumb-text"&gt;fdgndglk nkl nn kj&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;a href="#" class="btn btn-primary btn-lg btn-block" role="button"&gt;Go to Parking&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6 col-md-4"&gt;
+    &lt;div class="thumbnail"&gt;
+      &lt;div class="caption"&gt;
+        &lt;div class="thumb-content"&gt;
+          &lt;h2&gt;I need a holiday&lt;/h2&gt;
+          &lt;p class="thumb-text"&gt;fdgndglk nkl n kn k n kn kj n  sdfjsdi kj i niun iu n iun in iunvwdiun ciuniuniu n iun iu niu n iukjn kj njk n kjn kj&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;a href="#" class="btn btn-primary btn-lg btn-block" role="button"&gt;Go to Council Tax&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Panels -->
+
+              <h2><a name="buttons">Buttons</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Buttons -->
+
+              
+              <h3>Input Buttons</h3>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+
+                        <button type="button" class="btn btn-primary btn-lg">Large Primary Button</button>
+                        <button type="button" class="btn btn-default btn-lg">Back Button</button>
+                        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Disabled Back Button</button>
+
+                </div>
+              </div>
+
+
+<pre><code>                            
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large Primary Button&lt;/button&gt;
+    &lt;button type="button" class="btn btn-default btn-lg"&gt;Back Button&lt;/button&gt;
+    &lt;button type="button" class="btn btn-default btn-lg" disabled="disabled"&gt;Disabled Back Button&lt;/button&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+              <h3>Hyperlink Buttons</h3>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+
+                        <a class="btn btn-primary btn-lg" alt="Large Primary Button" href="#">Large Primary Button</a>
+                        <a class="btn btn-default btn-lg" alt="Back Button" href="#">Back Button</a>
+                        <a class="btn btn-default btn-lg" disabled="disabled" alt="Disabled Back Button" href="#">Disabled Back Button</a>
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;a class="btn btn-primary btn-lg" alt="Large Primary Button" href="#"&gt;Large Primary Button&lt;/a&gt;
+    &lt;a class="btn btn-default btn-lg" alt="Back Button" href="#"&gt;Back Button&lt;/a&gt;
+    &lt;a class="btn btn-default btn-lg" disabled="disabled" alt="Disabled Back Button" href="#"&gt;Disabled Back Button&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Buttons -->
+
+              <h2><a name="paginate">Pagination</a>&nbsp;&nbsp;<a class="arrow-top" href="#top">&and;</a>&nbsp;&nbsp;</h2>
+
+<!-- Start Pagination -->
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+
+                  <nav>
+                    <ul class="pager">
+                      <li class="previous">
+                        <ul>
+                          <li class="disabled"><a href="#"><span aria-hidden="true"><img src="images/firstInactive.png" width="16px" height="16px" alt="Previous First" /></span><span class="sr-only">Previous</span></a></li>
+                          <li class="disabled"><a href="#"><span aria-hidden="true"><img src="images/previousInactive.png" width="16px" height="16px" alt="Previous" /></span><span class="sr-only">Previous</span></a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li class="active"><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                        </ul>
+                      </li>
+                      <li class="next">
+                        <ul>
+                          <li><a href="#"><span aria-hidden="true"><img src="images/nextActive.png" width="16px" height="16px" alt="Previous Next" /></span><span class="sr-only">Next</span></a></li>
+                          <li><a href="#"><span aria-hidden="true"><img src="images/lastActive.png" width="16px" height="16px" alt="Previous Last" /></span><span class="sr-only">Next</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>              
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;nav&gt;
+      &lt;ul class="pager"&gt;
+        &lt;li class="previous"&gt;
+          &lt;ul&gt;
+            &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/firstInactive.png" width="16px" height="16px" alt="Previous First" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Previous&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/previousInactive.png" width="16px" height="16px" alt="Previous" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Previous&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="active"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="next"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/nextActive.png" width="16px" height="16px" alt="Previous Next" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Next&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/lastActive.png" width="16px" height="16px" alt="Previous Last" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Next&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;              
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+
+                  <nav>
+                    <ul class="pager">
+
+                      <li class="previous">
+                        <ul>
+                          <li><a href="#"><span aria-hidden="true"><img src="images/firstActive.png" width="16px" height="16px" alt="Previous First" /></span><span class="sr-only">Previous</span></a></li>
+                          <li><a href="#"><span aria-hidden="true"><img src="images/previousActive.png" width="16px" height="16px" alt="Previous" /></span><span class="sr-only">Previous</span></a></li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <ul>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li class="active"><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="next">
+                        <ul>
+                          <li class="disabled"><a href="#"><span aria-hidden="true"><img src="images/nextInactive.png" width="16px" height="16px" alt="Previous Next" /></span><span class="sr-only">Next</span></a></li>
+                          <li class="disabled"><a href="#"><span aria-hidden="true"><img src="images/lastInactive.png" width="16px" height="16px" alt="Previous Last" /></span><span class="sr-only">Next</span></a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </nav>             
+
+                </div>
+              </div>
+
+
+<pre><code>              
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-12"&gt;
+
+    &lt;nav&gt;
+      &lt;ul class="pager"&gt;
+
+        &lt;li class="previous"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/firstActive.png" width="16px" height="16px" alt="Previous First" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Previous&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/previousActive.png" width="16px" height="16px" alt="Previous" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Previous&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="active"&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+
+        &lt;li class="next"&gt;
+          &lt;ul&gt;
+            &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/nextInactive.png" width="16px" height="16px" alt="Previous Next" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Next&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&lt;img src="images/lastInactive.png" width="16px" height="16px" alt="Previous Last" /&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Next&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/nav&gt;             
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<!-- End Pagination -->
+
+
+
+            </div>
+<!-- End Content Area -->
+
+          </div>
+
+<!-- End Left Nav and Content Area -->
+
+        </div>
+      </div>
+
+    </div><!-- End Container -->
+
+
+      <!-- Bootstrap core JavaScript, Modernizr and general scripts
+      ================================================== -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/jquery.tablesorter.js"></script>
+      <script src="js/tablesorter.scroller.js"></script>
+
+      <script>
+
+      $(document).ready( function(){
+
+          $(".commonLibrary-container, .templateLibrary-container").hide();
+
+          $(".commonComp-link").click(function () {
+            $(".commonLibrary-container").slideToggle("slow");
+            $(".templateLibrary-container").hide();
+          });
+
+          $(".templateComp-link").click(function () {
+            $(".templateLibrary-container").slideToggle("slow");
+            $(".commonLibrary-container").hide();
+          });
+
+      });
+
+      </script>
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+      <!--[if lte IE 8]>
+        <script src="js/poly-checked.min.js"></script>
+      <![endif]-->
+
+  </body>
+</html>
