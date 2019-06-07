@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Camden Council DashBoard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://camden.gov.uk/ccm-ldn-theme/__ccm__/themes-prod/fc-sw2/images/icons/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/override.css" rel="stylesheet">  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      th { cursor:pointer; }
+      .appointment-customer { background-color:#333; margin-bottom:15px; padding:10px; }
+      .appointment-customer p { color:#fff; font-size:1em;  font-weight:bold; }
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- Start Container -->
+
+    <div class="container">
+
+<!-- Start Header -->
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <header>
+
+              <img src="images/headerLogo.png" class="img-responsive" alt="Camden Council">
+
+            </header>
+
+          </div>
+        </div>
+
+<!-- End Header -->
+
+      <div id="wrapper">
+
+<!-- Start Left Nav and Content Area -->
+
+        <div class="row">
+
+<!-- Start Left Nav -->
+
+          <div class="col-sm-4 col-md-4">
+
+            <div class="appointment-customer">
+              <p>Nadeem Butt,<br>
+                XYZ Street Avenue,<br>
+                Letchworth,<br>
+                Hertfordshire<br>SG6 4TT.</p>
+            </div>
+
+          </div>
+
+<!-- End Left Nav -->
+
+<!-- Start Content Area -->
+
+            <div class="col-sm-8 col-md-8 noleftpadding">
+
+<!-- Start Adding Rows for Content Area -->
+
+              <div class="row">
+                <div class="col-md-12">
+
+                 <div class="page-header">
+                    <header>
+                     <h1>Customer Transactions</h1>
+                    </header>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+
+                  <div class="form-group">
+                    <label for="selectmenu1">Show transactions for</label>
+                    <select id="selectmenu1" class="form-control">
+                      <option value="all">All</option>
+                      <option value="housing">Housing</option>
+                      <option value="parking">Parking</option>
+                      <option vlaue="residential">Residential</option>
+                    </select>
+                  </div>
+
+                </div>
+
+
+                <div class="col-sm-6 col-md-5">
+
+                  <div id="filter1">
+                    <div class="form-group">
+                      <label for="selectmenu2">Filter transactions by</label>
+                      <select id="selectmenu2" class="form-control">
+                        <option>All</option>
+                        <option>Management</option>
+                        <option>Leaseholder</option>
+                        <option>Repairs</option>
+                        <option>Rent</option>
+                        <option>Pest Control</option>
+                        <option>Benefits</option>
+                      </select>
+                    </div>
+                </div>
+
+                </div>
+
+
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+
+
+                  <div id="no-more-tables">
+
+                    <table id="myTable" cellspacing="0" cellpadding="0" class="tablesorter">
+
+                      <thead>
+                        <tr>
+                          <th class="header">Status</th>
+                          <th class="header">Date</th>
+                          <th class="header">Service</th>
+                          <th class="header">Description</th>
+                          <th class="header">Reference</th>
+                        </tr>
+                      </thead>       
+
+                      <tbody>                       
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                        </tr>  
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                        </tr> 
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">LeaseholderC</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                        </tr>  
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">OPEN</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">15/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">Repairs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225678</a></td>
+                        </tr>   
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                        </tr> 
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                        </tr> 
+
+
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">RepairBs</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">Leaseholder</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">1232225</a></td>
+                        </tr> 
+
+                        <tr>
+                          <td class="table-data" data-title="Status"><a href="#">CLOSED</a></td>
+                          <td class="table-data" data-title="Date"><a href="#">14/01/2013</a></td>
+                          <td class="table-data" data-title="Service"><a href="#">RepairsA</a></td>
+                          <td class="table-data" data-title="Description"><a href="#">LeaseholderA</a></td>
+                          <td class="table-data" data-title="Reference"><a href="#">12322b25</a></td>
+                        </tr> 
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+
+
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12">
+                    <p>This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the endThis is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end This is the end This is the end This is the end This is the endif This is the end This is the end This is the end This is the end</p>
+                </div>
+              </div>
+
+
+<!-- End Adding Rows for Content Area -->
+
+            </div>
+
+<!-- End Content Area -->
+
+          </div>
+
+<!-- End Left Nav and Content Area -->
+
+        </div>
+
+<!-- Start Footer -->
+
+        <div class="row">
+          <div class="col-md-12">
+
+             <footer>
+
+              <p class="pull-left"><img src="images/footerLogo.png" class="img-responsive" alt="Camden Council"></p>
+              <p class="pull-left copyright">Copyright &copy; 2014 Disclaimer and privacy statement</p>
+
+            </footer>
+
+          </div>
+        </div>
+
+<!-- End Footer -->
+
+
+      </div>
+
+<!-- End Container -->
+
+      <!-- Bootstrap core JavaScript, Modernizr and general scripts
+      ================================================== -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+      <script src="js/jquery.tablesorter.js"></script>
+      <script src="js/tablesorter.scroller.js"></script>
+
+      <script>
+        $(document).ready(function() 
+            { 
+
+              $("#myTable").tablesorter({
+                  widgets: [ 'scroller' ]
+                });
+
+              $("#filter1").hide();
+
+              $("#selectmenu1").change(function() {
+                var val = $(this).val();
+                if(val == "housing" || val == "parking") {
+                    $("#filter1").show();
+                }
+                else {
+                    $("#filter1").hide();
+                }
+
+              });
+
+
+            }); 
+
+      </script>
+
+  </body>
+</html>
